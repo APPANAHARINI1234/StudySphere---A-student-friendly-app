@@ -58,7 +58,7 @@ const startServer = async () => {
         const app = express();
         const server = http.createServer(app);
          app.use(cors({
-            origin: [process.env.FRONTEND_URL || 'http://localhost:3000', 'http://localhost:5173', 'https://the-study-sphere.vercel.app',"https://study-sphere-git-final-redfyels-projects.vercel.app"],
+            origin: [process.env.FRONTEND_URL || 'http://localhost:3000', 'http://localhost:5173', 'https://the-study-sphere.vercel.app/','https://studysphere-n4up.onrender.com','https://the-study-sphere.vercel.app',"https://study-sphere-git-final-redfyels-projects.vercel.app"],
             credentials: true
         }));
         app.options('*', cors());
